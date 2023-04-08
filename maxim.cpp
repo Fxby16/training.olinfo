@@ -18,7 +18,7 @@ multiset<int> memo;
             auto it = memo.find(v[i-K-1]);
             memo.erase(it); //rimuovo il regalo che non è più visibile
         }
-        saddest=max(max(abs((*memo.begin())-v[i]),abs((*memo.rbegin())-v[i])),saddest); //calcolo la differenza massima tra quella già ottenuta e il valore assoluto della diffenza tra v[i] e il massimo e il minimo nel range
+        saddest=max(max(abs((*memo.begin())-v[i]),abs((*memo.rbegin())-v[i])),saddest); //calcolo la differenza massima tra quella già ottenuta e il valore assoluto della diffenza tra v[i] e il massimo e tra v[i] e il minimo nel range
     }
     cout<<saddest;
 
