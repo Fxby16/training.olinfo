@@ -1,4 +1,3 @@
-//SI E' TERRIBILE
 #include <bits/stdc++.h>
 using namespace std;
 
