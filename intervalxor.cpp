@@ -22,13 +22,13 @@ int N,n;
     {
         cin>>n;
         if(n%4==0)
-            cout<<n<<' '<<maxxor(n)<<endl;
+            cout<<n<<' '<<maxxor(n)<<'\n';
         else if(n%4==1)
-            cout<<1<<' '<<n<<endl;
+            cout<<1<<' '<<n<<'\n';
         else if(n%4==2)
-            cout<<n+1<<' '<<maxxor(n+1)<<endl;
+            cout<<n+1<<' '<<maxxor(n+1)<<'\n';
         else
-            cout<<0<<' '<<n<<endl;
+            cout<<0<<' '<<n<<'\n';
     }
 
     return 0;
