@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#pragma GCC optimize ("O3")
+#pragma GCC optimize ("Ofast")
 #define ll long long
 #define INF LONG_LONG_MAX
 using namespace std;
