@@ -32,8 +32,10 @@ priority_queue<pair<ll,ll>> Q;
                 distr[a]=min(distr[a],dist[node]+b); //aggiorno il totale per raggiungere a se seguo la strada rossa
             else
                 distb[a]=min(distb[a],dist[node]+b); //aggiorno il totale per raggiungere a se seguo la strada blu
-            if(distb[a]==INF)
-                continue;
+            
+            if(c)           //Francesco non attraverserà mai una strada rossa, dato che o per sua decisione o per quella del poliziotto seguirà una strada blu
+                continue;   //la strada rossa mi serve solo per sapere se il poliziotto dovrà pagare 1 o no
+            
             ll temp;
             if(distb[a]>distr[a]) //se attiva il semaforo per far trascorrere più tempo, paga 1 (Francesco prenderebbe la strada più corta)
                 temp=distb[a]-1;
