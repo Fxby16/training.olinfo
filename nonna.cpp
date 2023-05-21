@@ -31,7 +31,6 @@ cin.tie(0);
     P.resize(N);
     for(int i=0;i<N;i++)
         cin>>P[i];
-    sort(P.begin(),P.end());
     vector<vector<int>>memo(K+1,vector<int>(N,-1));
     cout<<mangia(0,0,memo);
 
