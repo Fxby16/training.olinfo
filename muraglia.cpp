@@ -43,7 +43,7 @@ void getright(int node,int l,int r,int qs,int qe,int x){
 		if(tree[node*2]>x) //se il figlio di sinistra è maggiore del valore del bastione di partenza ricorro su di lui
 			getright(node*2,l,mid,qs,qe,x);
 		else 
-            getright(node*2+1,mid+1,r,qs,qe,x); //altrimenti ricorro sul figlio di destra
+            		getright(node*2+1,mid+1,r,qs,qe,x); //altrimenti ricorro sul figlio di destra
 		return;
 	}
 	getright(node*2,l,mid,qs,qe,x); //ricorro sui figli
