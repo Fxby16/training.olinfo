@@ -27,7 +27,7 @@ void log(vector<int>&added,vector<int>&removed){
 }
 int answer(int d,int y){
 int ans=0;
-    for(;d>0;d-=d&-d){ //dato che le figurine vengono aggiunte e tolte solo una volta, la risposta sarà la differenza tra tutte le figurine con indice >=y aggiunte e quelle rimosse
+    for(;d>0;d-=d&-d){
         ans+=add[d].end()-lower_bound(add[d].begin(),add[d].end(),y);
         ans-=rm[d].end()-lower_bound(rm[d].begin(),rm[d].end(),y);
     }
