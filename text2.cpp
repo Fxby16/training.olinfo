@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#pragma GCC optmize ("O3")
+#pragma GCC optimize ("O3")
 using namespace std;
 #define ll long long
 #define MAXN 100000
