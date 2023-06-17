@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#pragma GCC optmize ("Ofast")
+#pragma GCC optimize ("Ofast")
 using namespace std;
 #define ll long long
 #define SET LONG_LONG_MIN
