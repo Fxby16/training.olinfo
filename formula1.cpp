@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#pragma GCC optmize ("O3")
+#pragma GCC optimize ("O3")
 using namespace std;
 #define ll long long
 #define pll pair<ll,ll>
