@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 #define MAXN 2e5
 #define pii pair<int,int>
-//#pragma GCC optmize ("O3")
 using namespace std;
 #define ll long long
 
