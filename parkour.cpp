@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#pragma GCC optmize ("O3")
+#pragma GCC optimize ("O3")
 using namespace std;
 
 int salta(int N, vector<int> S, vector<int> A, vector<int> B){
