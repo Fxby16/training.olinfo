@@ -22,8 +22,7 @@ int first=1;
         }
         for(;i<bytes;i++){
             if(buffer[i]>='0')                   //ho letto una cifra. dato che leggo da sinistra, sommo la cifra al numero, e alla cifra successiva moltiplico il numero per 10. 
-                num=(num*10)+(buffer[i]-'0');    //dato che l'ultima cifra corrisponde a 10^0, non moltiplicherò ulteriormente, 
-                                                 //arrivando cosi ad aver moltiplicato il numero per 10^(n_cifre-1), ricomponendo il numero originale
+                num=(num*10)+(buffer[i]-'0');    //in questo modo il numero verrà moltiplicato per 10^(n_cifre-1), ricomponendo il numero originale
             else if(buffer[i]=='-') //se trovo un meno il numero è negativo. modifico il segno da applicare al numero
                 sign=-1;
             else{                   //arrivato qui significa che ho trovato uno spazio.
