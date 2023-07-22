@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
-#pragma GCC optimize ("O3")
+#pragma GCC optimize ("Ofast")
 #define ll long long
 #define MAXN 0xFFFFF
 
@@ -21,7 +21,7 @@ int first=1;
             first=0;
         }
         for(;i<bytes;i++){
-            if(buffer[i]>='0' && buffer[i]<='9') //ho letto una cifra. dato che leggo da sinistra, sommo la cifra al numero, e alla cifra successiva moltiplico il numero per 10. 
+            if(buffer[i]>='0')                   //ho letto una cifra. dato che leggo da sinistra, sommo la cifra al numero, e alla cifra successiva moltiplico il numero per 10. 
                 num=(num*10)+(buffer[i]-'0');    //dato che l'ultima cifra corrisponde a 10^0, non moltiplicherò ulteriormente, 
                                                  //arrivando cosi ad aver moltiplicato il numero per 10^(n_cifre-1), ricomponendo il numero originale
             else if(buffer[i]=='-') //se trovo un meno il numero è negativo. modifico il segno da applicare al numero
@@ -35,10 +35,4 @@ int first=1;
     }
     sum+=(num*sign); //dato che dopo l'ultimo numero non troverò nessun carattere da leggere, devo aggiungere il numero manualmente
     return sum;
-}
-
-int main(){
-FILE *fp=fopen("input.txt","r");
-    printf("%lld",somma(fp));
-    return 0;
 }
