@@ -14,15 +14,18 @@ vector<bool>visited(N+1,false);
     for(int i=1;i<=N;i++)
         cin>>v[i];
 
-int div=0,ans=N;
+int div=0,ans=0;
     for(int i=1;i<=N;i++){
         if(visited[i]) //se ho già visitato questo elemento continuo. è già incluso in un ciclo
             continue;
-        --ans; //rimuovo dal numero di elementi il numero di cicli del grafo. un ciclo può essere formato anche da un elemento
-        for(int n=i;!visited[n];n=v[n]){ //itero su tutti gli elementi del ciclo che parte da i. il ciclo è formato da più di un elemento se il numero non si trova nella posizione corretta
+
+        for(int n=i;!visited[n];n=v[n],ans++){ //itero su tutti gli elementi del ciclo che parte da i. 
+                                               //per eliminare un ciclo non banale(formato da più nodi) del grafo servono lunghezzaCiclo-1 scambi. 
+                                               //eliminando tutti i cicli non banali del grafo abbiamo un array ordinato
             div=__gcd(div,abs(n-v[n])); //trovo il massimo comune divisore tra tutti gli elementi che sono da scambiare
             visited[n]=true; //marchio come visitato questo elemento
         }
+        --ans;
     }
 
     for(int i=1;i<=N;i++){
