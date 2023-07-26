@@ -25,7 +25,7 @@ int rem_time=0;
 
         int ep_day=M/dur; //ep che posso vedere in un giorno 
         int days=ep/ep_day; //giorni necessari per finire la serie 
-        ep%=ep_day; //calcolo se mi serve un giorno in più per finire la serie (la divisione era approssimata per difetto
+        ep%=ep_day; //calcolo se mi serve un giorno in più per finire la serie (la divisione era approssimata per difetto) 
         if(ep){ //se mi serve un altro giorno
             tot_days++;
             rem_time=M-ep*dur;
