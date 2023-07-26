@@ -1,4 +1,4 @@
 # training.olinfo
-My solutions for [training.olinfo]: https://training.olinfo.it/#/tasks/1   
+My solutions for [training.olinfo]: (https://training.olinfo.it)  
 
-Solutions written in C/C++
+Solutions are written in C/C++
