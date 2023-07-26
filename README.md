@@ -1,4 +1,4 @@
 # training.olinfo
-My solutions for training.olinfo.it
+My solutions for [training.olinfo](training.olinfo.it)  
 
-Solutions are written in C/C++
+Solutions written in C/C++
