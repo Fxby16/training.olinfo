@@ -7,12 +7,12 @@ cin.tie(0);
 int N;
     cin>>N;
 
-    for(int i=0;i<N/2;i++) //reverse first half (cost 0)
+    for(int i=0;i<N/2;i++) //reverse first half
         cout<<"1 0 1\n";
 
-    cout<<(N+1)/2<<" 0 1\n"; //move second half on the top of the first (cost 1)
+    cout<<(N+1)/2<<" 0 1\n"; //move second half on the top of the first
 
-    for(int i=0;i<(N+1)/2;i++) //reverse the second half (cost 0)
+    for(int i=0;i<(N+1)/2;i++) //reverse the second half
         cout<<"1 1 0\n";
 
     cout<<(N+1)/2<<" 0 1\n"; //move the first half on the top of the second
