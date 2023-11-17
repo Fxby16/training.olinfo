@@ -28,7 +28,7 @@ cin.tie(0);
     }else{
         sort(begin(P),end(P));
     	for(int i=N-1;i>=0;i--){
-			ll temp=min((sum-required_sum),P[i]-1);
+		ll temp=min((sum-required_sum),P[i]-1);
     		sum-=temp;
     		if(temp==0)
     		    break;
