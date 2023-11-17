@@ -13,8 +13,8 @@ void solve(int A,int B){
 	while(remaining_points>0 || B>30){
 		int temp=min(remaining_points,10);
 		remaining_points-=temp;
-    	A_points.push_back(temp);
-    	B-=11;
+    		A_points.push_back(temp);
+    		B-=11;
 	}
 
 	if(A_points.size()>2 || B<0 || B>30){
