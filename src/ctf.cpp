@@ -2,8 +2,6 @@
 using namespace std;
 
 uint64_t Power(uint64_t exponent){
-    if(exponent==0)
-        return 1;
     return 1LL<<exponent;
 }
 
