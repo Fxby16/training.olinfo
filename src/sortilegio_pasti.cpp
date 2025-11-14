@@ -27,17 +27,9 @@ int dividi(int N, vector<int> V)
     int best = 0;
     for(int i = 0; i <= sum / 2; i++){
         if(dp[N][i]){
-            cout << i << ' ';
             best = i;
         }
     }
-    cout << '\n';
 
     return sum - best * 2;
-}
-
-int main()
-{
-    
-    cout << dividi(5, {1,2,3,4,5}) << '\n';
 }
